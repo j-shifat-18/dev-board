@@ -1,5 +1,13 @@
+document.getElementById("go-to-blogs").style.cursor = "pointer";
 document.getElementById("go-to-blogs").addEventListener("click", function () {
   window.location.href = "../blogs.html";
+});
+
+// theme changer
+document.getElementById("theme-btn").addEventListener("click", function () {
+  const randomColorCode = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6,"0"); 
+  const elements = document.getElementsByClassName("primary-color");
+  elements[0].style.backgroundColor = randomColorCode ;
 });
 
 // date
@@ -55,8 +63,6 @@ document
   .addEventListener("click", function () {
     completedBtnByIdAndTitle("completed-btn-6", "title-6");
   });
-
-
 
 //   clear history
 document

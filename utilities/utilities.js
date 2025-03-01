@@ -16,6 +16,7 @@ function completedBtnByIdAndTitle(id,title){
 
     // alert
     alert("Board updated successfully!");
+    if(taskAssigned === 0) alert("Congrates!!You have completed all the current task");
 }
 
 
@@ -42,7 +43,7 @@ function makeActivityHistory(title) {
   const time = date.toLocaleTimeString();
 
   div.innerHTML = `
-        <p>You have Complete The Task ${title} at ${time}</p>
+         <p>You have Complete The Task <span class="font-bold">${title}</span> at ${time}</p>
     `;
 
   container.prepend(div);
