@@ -1,5 +1,6 @@
 document.getElementById("go-to-blogs").style.cursor = "pointer";
-document.getElementById("go-to-blogs").addEventListener("click", function () {
+document.getElementById("go-to-blogs").addEventListener("click", function (event) {
+  event.preventDefault();
   window.location.href = "../blogs.html";
 });
 
