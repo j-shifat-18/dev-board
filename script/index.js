@@ -1,21 +1,22 @@
-document.getElementById('go-to-blogs').style.cursor = "pointer";
+document.getElementById("go-to-blogs").style.cursor = "pointer";
 document
-  .getElementById('go-to-blogs')
-  .addEventListener('click', function (event) {
+  .getElementById("go-to-blogs")
+  .addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.href = './blogs.html';
-    document.g
+    window.location.href = "./blogs.html";
   });
 
 // theme changer
 document.getElementById("theme-btn").style.cursor = "pointer";
 document.getElementById("theme-btn").addEventListener("click", function () {
+  
   const randomColorCode =
     "#" +
     Math.floor(Math.random() * 16777215)
       .toString(16)
       .padStart(6, "0");
   const elements = document.getElementsByClassName("primary-color");
+
   elements[0].style.backgroundColor = randomColorCode;
 });
 
