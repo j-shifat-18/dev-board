@@ -4,6 +4,7 @@ document
   .addEventListener('click', function (event) {
     event.preventDefault();
     window.location.href = '../blogs.html';
+    document.g
   });
 
 // theme changer
